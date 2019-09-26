@@ -31,7 +31,7 @@ public class ClientTestMain {
 
 	private static final String WSDD_PATH = "etc/client_deploy.wsdd";
 
-	private static final String ALIAS = "a58des";
+	private static final String ALIAS = "A58DES";
 	private static final String PASSWORD = "sad";
 	private static final String KEYSTORE = "etc/a58des.jks";
 
@@ -49,12 +49,15 @@ public class ClientTestMain {
 	 */
 	public static void main(String[] args) {
 		try {
-			System.setProperty("javax.net.ssl.trustStore", KEYSTORE);
-			System.setProperty("javax.net.ssl.trustStorePassword", PASSWORD);
-			System.setProperty("javax.net.ssl.trustStoreType", "JKS");
+			/*Descomentar para indicar un trustStore distinto a cacerts "EtzPre.crt ha de estar en nuestro trustStore"*/
+//			System.setProperty("javax.net.ssl.trustStore", TRUSTSTORE);
+//			System.setProperty("javax.net.ssl.trustStorePassword", TRUSTSTOREPASSWORD);
+//			System.setProperty("javax.net.ssl.trustStoreType", "JKS");
 
+			//Debug ssl
 			System.setProperty("javax.net.debug", "all");
-
+			
+			//Si necesitamos definir un proxy
 //			System.setProperty("socksProxyHost", "127.0.0.1");
 //			System.setProperty("socksProxyPort", "3130");
 
@@ -104,7 +107,7 @@ public class ClientTestMain {
 
 		Properties propertiesCert = new Properties();
 		propertiesCert.put("org.apache.ws.security.crypto.provider", "org.apache.ws.security.components.crypto.Merlin");
-		propertiesCert.put("org.apache.ws.security.crypto.merlin.keystore.type", "jks");
+		propertiesCert.put("org.apache.ws.security.crypto.merlin.keystore.type", "JKS");
 		propertiesCert.put("org.apache.ws.security.crypto.merlin.file", KEYSTORE);
 		propertiesCert.put("org.apache.ws.security.crypto.merlin.keystore.password", PASSWORD);
 
@@ -118,7 +121,7 @@ public class ClientTestMain {
 	}
 
 	/**
-	 * Consultar censo.
+	 * Invoca operacion enviarFichero del WS 
 	 *
 	 * @throws Exception
 	 *             the exception
