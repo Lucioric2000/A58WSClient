@@ -50,9 +50,11 @@ public class ClientTestMain {
 	public static void main(String[] args) {
 		try {
 			/*Descomentar para indicar un trustStore distinto a cacerts "EtzPre.crt ha de estar en nuestro trustStore"*/
-//			System.setProperty("javax.net.ssl.trustStore", TRUSTSTORE);
-//			System.setProperty("javax.net.ssl.trustStorePassword", TRUSTSTOREPASSWORD);
-//			System.setProperty("javax.net.ssl.trustStoreType", "JKS");
+			System.setProperty("javax.net.ssl.keyStore", "C:/Users/lucio/PycharmProjects/Salma_Mumtaz_projects/Cloudbeds_integration/A58WSClient/A58WSAxisClient/etc/a58des.jks");
+			System.setProperty("javax.net.ssl.keyStorePassword","sad");
+			//System.setProperty("javax.net.ssl.trustStore", "C:/Users/lucio/PycharmProjects/Salma_Mumtaz_projects/Cloudbeds_integration/A58WSClient/A58WSAxisClient/etc/a58des.jks");
+			//System.setProperty("javax.net.ssl.trustStorePassword", "sad");
+			//System.setProperty("javax.net.ssl.trustStoreType", "JKS");
 
 			//Debug ssl
 			System.setProperty("javax.net.debug", "all");
