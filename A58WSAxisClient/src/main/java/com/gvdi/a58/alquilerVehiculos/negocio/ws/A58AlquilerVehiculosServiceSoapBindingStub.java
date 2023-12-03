@@ -202,30 +202,31 @@ public class A58AlquilerVehiculosServiceSoapBindingStub extends org.apache.axis.
 
         setRequestHeaders(_call);
         setAttachments(_call);
- try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {parameters});
+        try {
+            java.lang.Object _resp = _call.invoke(new java.lang.Object[] {parameters});
 
-        if (_resp instanceof java.rmi.RemoteException) {
-            throw (java.rmi.RemoteException)_resp;
-        }
-        else {
-            extractAttachments(_call);
-            try {
-                return (com.gvdi.a58.alquilerVehiculos.negocio.ws.EnviarFicheroResponse) _resp;
-            } catch (java.lang.Exception _exception) {
-                return (com.gvdi.a58.alquilerVehiculos.negocio.ws.EnviarFicheroResponse) org.apache.axis.utils.JavaUtils.convert(_resp, com.gvdi.a58.alquilerVehiculos.negocio.ws.EnviarFicheroResponse.class);
+            if (_resp instanceof java.rmi.RemoteException) {
+                throw (java.rmi.RemoteException)_resp;
             }
+            else {
+                extractAttachments(_call);
+                try {
+                    return (com.gvdi.a58.alquilerVehiculos.negocio.ws.EnviarFicheroResponse) _resp;
+                } catch (java.lang.Exception _exception) {
+                    return (com.gvdi.a58.alquilerVehiculos.negocio.ws.EnviarFicheroResponse) org.apache.axis.utils.JavaUtils.convert(_resp, com.gvdi.a58.alquilerVehiculos.negocio.ws.EnviarFicheroResponse.class);
+                }
+            }
+        } catch (org.apache.axis.AxisFault axisFaultException) {
+            if (axisFaultException.detail != null) {
+                if (axisFaultException.detail instanceof java.rmi.RemoteException) {
+                      throw (java.rmi.RemoteException) axisFaultException.detail;
+                 }
+                if (axisFaultException.detail instanceof errors.negocio.oinarri.gvdi.com.BusinessException) {
+                      throw (errors.negocio.oinarri.gvdi.com.BusinessException) axisFaultException.detail;
+                 }
+            }
+            throw axisFaultException;
         }
-  } catch (org.apache.axis.AxisFault axisFaultException) {
-    if (axisFaultException.detail != null) {
-        if (axisFaultException.detail instanceof java.rmi.RemoteException) {
-              throw (java.rmi.RemoteException) axisFaultException.detail;
-         }
-        if (axisFaultException.detail instanceof errors.negocio.oinarri.gvdi.com.BusinessException) {
-              throw (errors.negocio.oinarri.gvdi.com.BusinessException) axisFaultException.detail;
-         }
-   }
-  throw axisFaultException;
-}
     }
 
 }
