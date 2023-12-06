@@ -5,6 +5,8 @@ package com.gvdi.a58.alquilerVehiculos.negocio.ws.test;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.security.KeyManagementException;
+import java.security.NoSuchAlgorithmException;
 import java.util.Properties;
 
 import javax.xml.rpc.Stub;
@@ -18,14 +20,35 @@ import com.gvdi.a58.alquilerVehiculos.negocio.ws.A58AlquilerVehiculosServiceSoap
 import com.gvdi.a58.alquilerVehiculos.negocio.ws.EnviarFichero;
 import com.gvdi.a58.alquilerVehiculos.negocio.ws.EnviarFicheroResponse;
 
+
+import java.io.InputStreamReader;
+import java.io.Reader;
+import java.net.URL;
+import java.net.URLConnection;
+
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSession;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
+import java.security.cert.X509Certificate;
 /**
  * The Class ClientTestMain.
  */
 public class ClientTestMain {
 
+	// Create a trust manager that does not validate certificate chains
+
 //	private static final String ENDPOINT = "http://obuscpre.ejhsgvdi.net:9810/Ertzaintza/ALQVEHICULOS/A58/v2/EnvioFichero";
 
-	private static final String ENDPOINT = "https://servicios.pre.ertzaintza.eus/Ertzaintza/ALQVEHICULOS/A58/v2/EnvioFichero";
+//private static final String ENDPOINT = "https://servicios.pre.ertzaintza.eus/Ertzaintza/ALQVEHICULOS/A58/v2/EnvioFichero";
+//private static final String ENDPOINT = "https://servicios.pre.ertzaintza.eus/Ertzaintza/A19/registroHostelero/EnvioFichero";
+//    private static final String ENDPOINT = "https://interno.grupoquae.mx/Ertzaintza/A19/registroHostelero/EnvioFichero";
+	private static final String ENDPOINT = "http://localhost:5000";
+//	private static final String ENDPOINT = "http://servicios.pre.ertzaintza.euskadi.eus/Ertzaintza/ALQVEHICULOS/A58/v2/EnvioFichero";
+//private static final String ENDPOINT = "https://www.ertzaintza.euskadi.eus/Ertzaintza/ALQVEHICULOS/A58/v2/EnvioFichero";
+//private static final String ENDPOINT = "https://www.google.com/Ertzaintza/ALQVEHICULOS/A58/v2/EnvioFichero";
 //	private static final String ENDPOINT = "http://obuscdesa1.ejhsgvdi.net:9810/Ertzaintza/ALQVEHICULOS/A58/v2/EnvioFichero";
 //	private static final String ENDPOINT = "http://obuscpre.ejhsgvdi.net:9810/Ertzaintza/ALQVEHICULOS/A58/v2/EnvioFichero";
 
@@ -47,18 +70,56 @@ public class ClientTestMain {
 	 * @param args
 	 *            the arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NoSuchAlgorithmException, KeyManagementException {
+		TrustManager[] trustAllCerts = new TrustManager[] {new X509TrustManager() {
+			public java.security.cert.X509Certificate[] getAcceptedIssuers() {
+				return null;
+			}
+
+			public void checkClientTrusted(X509Certificate[] certs, String authType) {
+			}
+
+			public void checkServerTrusted(X509Certificate[] certs, String authType) {
+			}
+		}
+		};
+
+		// Install the all-trusting trust manager
+		SSLContext sc = SSLContext.getInstance("SSL");
+		sc.init(null, trustAllCerts, new java.security.SecureRandom());
+		HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
+
+		// Create all-trusting host name verifier
+		HostnameVerifier allHostsValid = new HostnameVerifier() {
+			public boolean verify(String hostname, SSLSession session) {
+				return true;
+			}
+		};
+
+		// Install the all-trusting host verifier
+		HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid);
+		HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
 		try {
 			/*Descomentar para indicar un trustStore distinto a cacerts "EtzPre.crt ha de estar en nuestro trustStore"*/
-			System.setProperty("javax.net.ssl.keyStore", "C:/Users/lucio/PycharmProjects/Salma_Mumtaz_projects/Cloudbeds_integration/A58WSClient/A58WSAxisClient/etc/a58des.jks");
-			System.setProperty("javax.net.ssl.keyStorePassword","sad");
-			//System.setProperty("javax.net.ssl.trustStore", "C:/Users/lucio/PycharmProjects/Salma_Mumtaz_projects/Cloudbeds_integration/A58WSClient/A58WSAxisClient/etc/a58des.jks");
+			//System.setProperty("javax.net.ssl.keyStore", "C:/Users/lucio/PycharmProjects/Salma_Mumtaz_projects/Cloudbeds_integration/A58WSClient/A58WSAxisClient/etc/myTrustStore");
+			//System.setProperty("javax.net.ssl.keyStorePassword","changeit");
+			System.setProperty("com.sun.net.ssl.checkRevocation","false");
+			System.setProperty("com.sun.security.enableAIAcaIssuers","true");
+			System.setProperty("com.sun.jndi.ldap.object.disableEndpointIdentification","true");
+			System.setProperty("javax.net.ssl.trustStore", "C:/Users/lucio/PycharmProjects/Salma_Mumtaz_projects/Cloudbeds_integration/A58WSClient/A58WSAxisClient/etc/a58des.jks");
 			//System.setProperty("javax.net.ssl.trustStorePassword", "sad");
 			//System.setProperty("javax.net.ssl.trustStoreType", "JKS");
 
 			//Debug ssl
 			System.setProperty("javax.net.debug", "all");
-			
+			javax.net.ssl.HttpsURLConnection.setDefaultHostnameVerifier(
+					new javax.net.ssl.HostnameVerifier(){
+
+						public boolean verify(String hostname,
+											  javax.net.ssl.SSLSession sslSession) {
+							return true;//hostname.equals("localhost"); // or return true
+						}
+					});
 			//Si necesitamos definir un proxy
 //			System.setProperty("socksProxyHost", "127.0.0.1");
 //			System.setProperty("socksProxyPort", "3130");
