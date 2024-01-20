@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9f49c457-22f7-4de1-91c0-27ae648e92b9" name="Changes" comment="Testing in Maven" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/corretto-1.8.0_392/src.zip!/java/security/cert/CertPathBuilder.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/corretto-1.8.0_392/src.zip!/sun/security/provider/certpath/SunCertPathBuilder.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/corretto-1.8.0_392/src.zip!/sun/security/ssl/Alert.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/corretto-1.8.0_392/src.zip!/sun/security/ssl/SSLSocketImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/corretto-1.8.0_392/src.zip!/sun/security/ssl/SSLTransport.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/corretto-1.8.0_392/src.zip!/sun/security/validator/PKIXValidator.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/axis/axis/1.4/axis-1.4-sources.jar!/org/apache/axis/client/AxisClient.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2Z0jwpq8mVO5kToNCPCGNWTwX5W" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8 (2)&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lucio/PycharmProjects/Salma_Mumtaz_projects/Cloudbeds_integration&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/lucio/PycharmProjects/Salma_Mumtaz_projects/Cloudbeds_integration/A58WSClient/A58WSAxisClient/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lucio\PycharmProjects\Salma_Mumtaz_projects\Cloudbeds_integration\A58WSClient\A58WSAxisClient\etc" />
+      <recent name="C:\Users\lucio\PycharmProjects\Salma_Mumtaz_projects\Cloudbeds_integration\A58WSClient\A58WSAxisClient\src\main\java" />
+      <recent name="C:\Users\lucio\PycharmProjects\Salma_Mumtaz_projects\Cloudbeds_integration\A58WSClient\A58WSAxisClient" />
+      <recent name="C:\Users\lucio\PycharmProjects\Salma_Mumtaz_projects\Cloudbeds_integration\A58WSClient\A58WSAxisClient\src\com\gvdi\a58\alquilerVehiculos\negocio\ws" />
+      <recent name="C:\Users\lucio\PycharmProjects\Salma_Mumtaz_projects\Cloudbeds_integration\A58WSClient\A58WSAxisClient\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ClientTestMain">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gvdi.a58.alquilerVehiculos.negocio.ws.App" />
+      <module name="A58WSAxisClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gvdi.a58.alquilerVehiculos.negocio.ws.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientTestMain" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="BUNDLED" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.gvdi.a58.alquilerVehiculos.negocio.ws.test.ClientTestMain" />
+      <module name="A58WSAxisClient" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gvdi.a58.alquilerVehiculos.negocio.ws.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8 (2)" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="A58WSAxisClient" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Package" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="package" />
+              </list>
+            </option>
+            <option name="multimoduleDir" />
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.ClientTestMain" />
+      <item itemvalue="Application.App" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Maven.Package" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_392-corretto-1.8.0_392-3183f394aec4-cb300fc7" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f49c457-22f7-4de1-91c0-27ae648e92b9" name="Changes" comment="" />
+      <created>1701566131702</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701566131702</updated>
+      <workItem from="1701566132704" duration="519000" />
+      <workItem from="1701566755836" duration="2277000" />
+      <workItem from="1701576391769" duration="346000" />
+      <workItem from="1701576814720" duration="2847000" />
+      <workItem from="1701579698724" duration="228000" />
+      <workItem from="1701580243094" duration="3765000" />
+      <workItem from="1701584051463" duration="2710000" />
+      <workItem from="1701586793143" duration="1185000" />
+      <workItem from="1701587999797" duration="35000" />
+      <workItem from="1701588056331" duration="4298000" />
+      <workItem from="1701723857511" duration="264000" />
+      <workItem from="1701755620803" duration="532000" />
+      <workItem from="1701756175532" duration="3084000" />
+      <workItem from="1701759293692" duration="3727000" />
+      <workItem from="1701787031663" duration="10358000" />
+      <workItem from="1701879058106" duration="2114000" />
+      <workItem from="1701885207811" duration="426000" />
+      <workItem from="1701892850792" duration="2904000" />
+      <workItem from="1701959981135" duration="251000" />
+      <workItem from="1704216795465" duration="71000" />
+      <workItem from="1704216903213" duration="31000" />
+      <workItem from="1704216976611" duration="594000" />
+    </task>
+    <task id="LOCAL-00001" summary="Starting project updating.">
+      <option name="closed" value="true" />
+      <created>1701577227264</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701577227265</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Testing in Maven">
+      <option name="closed" value="true" />
+      <created>1701581519866</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701581519866</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Testing in Maven">
+      <option name="closed" value="true" />
+      <created>1701581534330</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701581534330</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Testing in Maven">
+      <option name="closed" value="true" />
+      <created>1701589289271</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701589289271</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Testing in Maven">
+      <option name="closed" value="true" />
+      <created>1701592354060</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1701592354061</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Testing in Maven">
+      <option name="closed" value="true" />
+      <created>1701756874447</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1701756874447</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Starting project updating." />
+    <MESSAGE value="Testing in Maven" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing in Maven" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/gvdi/a58/alquilerVehiculos/negocio/ws/test/ClientTestMain.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/ws/security/wso2/wss4j/1.5.11-wso2v22/wss4j-1.5.11-wso2v22.jar!/org/apache/ws/axis/security/WSDoAllSender.class</url>
+          <line>55</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.jdks/corretto-1.8.0_392/src.zip!/sun/security/validator/PKIXValidator.java</url>
+          <line>443</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
